@@ -16,7 +16,11 @@ dependencies = [
     "python-box>=7.2.0",
     "scikit-learn>=1.5.2",
     "seaborn>=0.13.2",
+    "shap>=0.46.0",
     "sqlalchemy>=2.0.35",
     "uvicorn>=0.31.0",
     "xgboost>=2.1.1",
 ]
+
+[tool.uv.sources]
+eli5 = { git = "https://github.com/RobertCarruthers-Ki/eli5", branch = "update-sklearn" }
