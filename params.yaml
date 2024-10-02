@@ -2,17 +2,17 @@ base:
   project: bank_customer_churn
   raw_data_dir: data/raw
   countries:
-    - France
-    - Spain
+  - France
+  - Spain
   feat_cols:
-    - CreditScore
-    - Age
-    - Tenure
-    - Balance
-    - NumOfProducts
-    - HasCrCard
-    - IsActiveMember
-    - EstimatedSalary
+  - CreditScore
+  - Age
+  - Tenure
+  - Balance
+  - NumOfProducts
+  - HasCrCard
+  - IsActiveMember
+  - EstimatedSalary
   targ_col: Exited
   random_state: 42
 
@@ -25,5 +25,5 @@ train:
   model_dir: models
   model_path: models/clf-model.joblib
   params:
-    n_estimators: 200
+    n_estimators: 170
     max_depth: 20
